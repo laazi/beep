@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="beep.beep.Beep">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    <Chronometer
+        android:id="@+id/chrn"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:textSize="85sp"
+        android:gravity="center"
+        />
+        <TextView
+            android:id="@+id/kokso"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/chrn"
+            android:textSize="85sp"
+            android:gravity="center"
+            android:text="00:00:00"/>
+        <TextView
+            android:id="@+id/macky"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/kokso"
+            android:textSize="85sp"
+            android:gravity="center"
+            android:text="0"/>
+    <Button
+        android:id="@+id/teraz"
+        android:layout_height="105dp"
+        android:layout_width="105dp"
+        android:gravity="center"
+        android:text="TERAZ"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
